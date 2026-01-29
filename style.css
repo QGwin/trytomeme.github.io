@@ -1,0 +1,169 @@
+
+
+/* Start:/local/templates/wi_genshin/components/bitrix/system.pagenavigation/.default/style.css?1636294897743*/
+.wiPagination {text-align: center;}
+.wiPagination__container {list-style: none; margin: 0; padding: 0;}
+.wiPagination__item {display: inline-block; margin: 0 1px;}
+.wiPagination__item._prev {}
+.wiPagination__item._next {}
+.wiPagination__item._active {}
+.wiPagination__item._all {}
+.wiPagination__link,
+.wiPagination__link._empty:hover {display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  color: #4d5669;
+  border-radius: 0.25rem; 
+  text-align: center; 
+  padding: 0.25rem;
+  font-family: var(--font-title);
+}
+a.wiPagination__link:hover,
+.wiPagination__item._active .wiPagination__link {background: #4d5669; color: #fff; text-decoration: none;}
+
+.wiPagination__link._empty {cursor: default;}
+/* End */
+
+
+/* Start:/local/templates/wi_genshin/components/bitrix/catalog.item/.default/style.css?16706075396896*/
+.itemcard {width: 6.625em; position: relative; border-radius: 0.25rem; background: #e9e5dc; display: block; text-decoration: none !important; transition: 0.5s; box-shadow: 0 1px 2px #666;
+  width: 100%;
+  max-width: 256px;
+  overflow: hidden;
+}
+a.itemcard:hover {box-shadow: 0 1px 5px #000;}
+.itemcard__element {position: absolute; top: 0; left: 0; z-index:2; width: 1.75em; height: 1.75em; background-position: center center; background-repeat: no-repeat; background-size: cover;}
+.itemcard__element._anemo {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Anemo.png);}
+.itemcard__element._cryo {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Cryo.png);}
+.itemcard__element._dendro {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Dendro.png);}
+.itemcard__element._electro {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Electro.png);}
+.itemcard__element._geo {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Geo.png);}
+.itemcard__element._hydro {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Hydro.png);}
+.itemcard__element._pyro {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/e/Pyro.png);}
+.itemcard__const {color: #f4d8a9; position: absolute; top: 0px; right: 0px; font-size: 0.875em; font-family: 'genshin';  font-weight: normal; 
+  background: #425164; border: 1px solid #f4d8a9; border-radius: 0.25rem; padding: 4px 3px 2px; line-height: 1;
+  z-index:2;
+}
+.itemcard__imgC {overflow: hidden;  background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #d2c4b4;
+  height: 0px; padding-top: 100%;
+  border-radius: 0.25rem; 
+  overflow: hidden;
+  position: relative;
+}
+
+.itemcard__imgName {text-indent: -9999px;}
+.itemcard__imgC._desc {border-bottom-right-radius: 1.375em; border-bottom-left-radius: 0;} 
+.itemcard__imgC._s1 {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/s/1.jpg);}
+.itemcard__imgC._s2 {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/s/2.jpg);}
+.itemcard__imgC._s3 {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/s/3.jpg);}
+.itemcard__imgC._s4 {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/s/4.jpg);}
+.itemcard__imgC._s5 {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/s/5.jpg);}
+.itemcard__img {position: absolute; left: 0; top: 0; right: 0; bottom: 0; display: flex;}
+.itemcard__img img {object-fit: contain; height: 100%; width: 100%;}
+/*.itemcard__img img.bx-lazyload-loading,
+.itemcard__img img[v-bx-lazyload] {object-fit: none !important; position: absolute; left: 50%; top: 50%; margin: -19px 0 0 -19px; width: auto;}*/
+.itemcard__img._cover img {object-fit: cover;}
+.itemcard__name {text-align: center; color: #4d5669; font-family: 'genshin';  font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;line-height: 1.5;
+font-size: 15px;
+}
+.itemcard__name._sm {font-size: 0.875em; line-height: 1.375em}
+
+.itemcard._dungeon {max-width: 512px;}
+.itemcard._dungeon .itemcard__imgC {padding-top: 35%;}
+.itemcard._dungeon .itemcard__img img {object-fit: cover;} 
+
+.itemcard._enemy {width: 9.3em;}
+.itemcard._enemy .itemcard__imgC {padding-top: 50%;}
+.itemcard._enemy .itemcard__img img {object-fit: cover;}
+
+.itemcard__sticker {font-family: 'genshin'; position: absolute; border: 0.125em solid rgb(240 196 56 / 75%); background: rgb(203 130 14 / 75%); color: #ffff80; right: 0; top: -0.25em;
+  padding:  0.1875em 0.1875em 0.125em ; font-size: 0.875em; line-height: 1; border-radius: 0.25rem;
+  box-shadow: 0 0 0.375rem rgb(240 196 56);
+  z-index: 2;
+}
+.itemcard__sticker:before,
+.itemcard__sticker:after {content: ''; position: absolute; display: block; background: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/star.svg) center center no-repeat; background-size: contain;}
+.itemcard__sticker:before {bottom: -0.375em; left: -0.375em; width: 0.625em; height: 0.625em;}
+.itemcard__sticker:after {top: -0.4375em; right: -0.4375em; width: 0.75em; height: 0.75em;}
+
+.itemcard.char {font-size: 0.83rem;}
+
+.itemcard__effect {position: absolute; top: 0; left: 0; width: 1.75em; height: 1.75em; background-position: center center; background-repeat: no-repeat; background-size: cover;}
+.itemcard__effect._atk_add {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/atk_atk.png);}
+.itemcard__effect._def_add {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/def_def.png);}
+.itemcard__effect._recovery_revive {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/revive.png);}
+.itemcard__effect._atk_critrate {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/atk_crit.png);}
+.itemcard__effect._recovery_hpaddall {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/hp_regen.png);}
+.itemcard__effect._recovery_hpadd {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/hp_plus.png);}
+.itemcard__effect._other_spreduceconsume {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/stam_reduce.png);}
+.itemcard__effect._other_spadd {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/stam_plus.png);}
+.itemcard__effect._climate_heat {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ef/climate_heat.png);}
+
+
+.itemcard._banner {width: 100%; max-width: none;}
+.itemcard._banner .itemcard__imgC {padding-top: 49%;}
+.itemcard._banner .itemcard__img img {object-fit: cover;}
+
+.itemcard__type {position: absolute; top: 0; left: 0; width: 1.75em; height: 1.75em; background-position: center center; background-repeat: no-repeat; background-size: cover; z-index: 10;}
+.itemcard__type._forge {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ty/diagram.png);}
+.itemcard__type._cook_recipe {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ty/recipe.png);}
+.itemcard__type._combine {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ty/instructions.png);}
+.itemcard__type._furniture_suite {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ty/furnishing_set_indoor.png);}
+.itemcard__type._furniture_formula {background-image: url(/local/templates/wi_genshin/components/bitrix/catalog.item/.default/images/ty/furnishing_blueprint.png);}
+
+.itemcard.outfit {}
+.itemcard.outfit .itemcard__imgC {padding-top: 130%;}
+
+.itemcard__count {position: absolute; bottom: 0; left: 0; right: 0; padding: 0.125em; font-size: 1em; background: rgb(73 83 102 / 75%); color: #fff; font-family: 'genshin'; text-align: center;}
+
+.itemcard__name._hide {display: none;}
+
+.itemcard._long {max-width: none;}
+.itemcard._long .itemcard__imgC {padding-top: 50%;}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .itemcard.char {font-size: 0.91rem;}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .itemcard.char {font-size: 0.90rem;}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .itemcard.char {font-size: 0.92rem;}
+  .itemcard__name._hide {
+    display:block;
+    position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgb(233 229 220 / 80%);
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      max-height: 100%;
+      white-space: normal;
+      overflow: hidden;
+      transform: translateY(100%);
+      transition: .5s;
+      font-size: 0.875em;
+      line-height: 1.2; padding: 0.25em 0;
+  }
+  .itemcard:hover .itemcard__name._hide {transform: translateY(0);}
+  .itemcard._long .itemcard__imgC {padding-top: 33%;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .itemcard__name {padding: 0 0.25rem;}
+  .itemcard.char {font-size: 0.99rem;}
+  .itemcard._dungeon {}
+  .itemcard.outfit {font-size: 1.115rem;}
+  
+}
+/* End */
+/* /local/templates/wi_genshin/components/bitrix/system.pagenavigation/.default/style.css?1636294897743 */
+/* /local/templates/wi_genshin/components/bitrix/catalog.item/.default/style.css?16706075396896 */
