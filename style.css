@@ -65,7 +65,7 @@ a.itemcard:hover {box-shadow: 0 1px 5px #000;}
 .itemcard__img img[v-bx-lazyload] {object-fit: none !important; position: absolute; left: 50%; top: 50%; margin: -19px 0 0 -19px; width: auto;}*/
 .itemcard__img._cover img {object-fit: cover;}
 .itemcard__name {text-align: center; color: #4d5669; font-family: 'genshin';  font-weight: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;line-height: 1.5;
-font-size: 15px;
+font-size: 20px;
 }
 .itemcard__name._sm {font-size: 0.875em; line-height: 1.375em}
 
@@ -149,7 +149,7 @@ font-size: 15px;
       overflow: hidden;
       transform: translateY(100%);
       transition: .5s;
-      font-size: 0.875em;
+      font-size: 1em;
       line-height: 1.2; padding: 0.25em 0;
   }
   .itemcard:hover .itemcard__name._hide {transform: translateY(0);}
